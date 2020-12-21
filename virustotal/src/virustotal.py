@@ -42,6 +42,8 @@ class VirusTotalConnector:
             if json_data["error"]["message"] == "Quota exceeded":
                 self.helper.log_info("Quota reached, waiting 1 hour.")
                 sleep(self._CONNECTOR_RUN_INTERVAL_SEC)
+            elif json_data["error"]["message"] == "Resource not found.":
+                return "File not found on VirusTotal."
             else:
                 raise ValueError(json_data["error"]["message"])
         if "data" in json_data:
@@ -49,20 +51,25 @@ class VirusTotalConnector:
             attributes = data["attributes"]
 
             # Update the current observable
-            final_observabke = self.helper.api.stix_cyber_observable.update_field(
+            final_observable = self.helper.api.stix_cyber_observable.update_field(
                 id=observable["id"], key="hashes.MD5", value=attributes["md5"]
             )
-            final_observabke = self.helper.api.stix_cyber_observable.update_field(
-                id=final_observabke["id"], key="hashes.SHA-1", value=attributes["sha1"]
+            final_observable = self.helper.api.stix_cyber_observable.update_field(
+                id=final_observable["id"], key="hashes.SHA-1", value=attributes["sha1"]
             )
-            final_observabke = self.helper.api.stix_cyber_observable.update_field(
-                id=final_observabke["id"],
+            final_observable = self.helper.api.stix_cyber_observable.update_field(
+                id=final_observable["id"],
+                key="size",
+                value=attributes["size"],
+            )
+            final_observable = self.helper.api.stix_cyber_observable.update_field(
+                id=final_observable["id"],
                 key="hashes.SHA-256",
                 value=attributes["sha256"],
             )
             if observable["name"] is None and len(attributes["names"]) > 0:
                 self.helper.api.stix_cyber_observable.update_field(
-                    id=final_observabke["id"], key="name", value=attributes["names"][0]
+                    id=final_observable["id"], key="name", value=attributes["names"][0]
                 )
 
             # Create external reference
@@ -76,11 +83,11 @@ class VirusTotalConnector:
             for tag in attributes["tags"]:
                 tag_vt = self.helper.api.label.create(value=tag, color="#0059f7")
                 self.helper.api.stix_cyber_observable.add_label(
-                    id=final_observabke["id"], label_id=tag_vt["id"]
+                    id=final_observable["id"], label_id=tag_vt["id"]
                 )
 
             self.helper.api.stix_cyber_observable.add_external_reference(
-                id=final_observabke["id"],
+                id=final_observable["id"],
                 external_reference_id=external_reference["id"],
             )
 
