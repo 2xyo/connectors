@@ -60,7 +60,7 @@ class VirusTotalConnector:
             final_observable = self.helper.api.stix_cyber_observable.update_field(
                 id=final_observable["id"],
                 key="size",
-                value=attributes["size"],
+                value=str(attributes["size"]),
             )
             final_observable = self.helper.api.stix_cyber_observable.update_field(
                 id=final_observable["id"],
