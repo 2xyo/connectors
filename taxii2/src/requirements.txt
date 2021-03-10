@@ -13,7 +13,7 @@ regex
 requests
 simplejson
 six
-sseclient
+sseclient==0.0.27
 stix2
 stix2-patterns
 taxii2-client
