@@ -4,7 +4,7 @@ certifi
 chardet
 datefinder
 idna
-pika
+pika==1.2.0
 python-dateutil
 python-magic
 pytz
