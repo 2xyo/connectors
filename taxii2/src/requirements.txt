@@ -14,7 +14,7 @@ requests
 simplejson
 six
 sseclient
-stix2
+stix2==2.1.0
 stix2-patterns
 taxii2-client
 urllib3
