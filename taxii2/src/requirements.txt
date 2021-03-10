@@ -11,7 +11,7 @@ pytz
 PyYAML
 regex
 requests
-simplejson
+simplejson==3.17.2
 six
 sseclient
 stix2
