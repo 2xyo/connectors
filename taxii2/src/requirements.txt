@@ -12,7 +12,7 @@ PyYAML
 regex
 requests
 simplejson
-six
+six==1.15.0
 sseclient
 stix2
 stix2-patterns
