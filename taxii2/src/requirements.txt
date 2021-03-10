@@ -9,7 +9,7 @@ python-dateutil
 python-magic
 pytz
 PyYAML
-regex
+regex==2020.11.13
 requests
 simplejson
 six
