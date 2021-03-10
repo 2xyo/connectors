@@ -1,6 +1,6 @@
 pycti==4.2.4
 antlr4-python3-runtime
-certifi
+certifi==2020.12.5
 chardet
 datefinder
 idna
