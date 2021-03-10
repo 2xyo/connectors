@@ -2,7 +2,7 @@ pycti==4.2.4
 antlr4-python3-runtime
 certifi
 chardet
-datefinder
+datefinder==0.7.1
 idna
 pika
 python-dateutil
