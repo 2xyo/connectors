@@ -16,5 +16,5 @@ six
 sseclient
 stix2
 stix2-patterns
-taxii2-client
+taxii2-client==2.2.2
 urllib3
