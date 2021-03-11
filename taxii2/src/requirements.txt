@@ -17,4 +17,4 @@ sseclient
 stix2
 stix2-patterns
 taxii2-client
-urllib3
+urllib3==1.26.3
