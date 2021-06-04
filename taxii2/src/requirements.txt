@@ -6,7 +6,7 @@ datefinder
 idna
 pika
 python-dateutil
-python-magic
+python-magic==0.4.24
 pytz
 PyYAML
 regex
