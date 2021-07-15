@@ -10,7 +10,7 @@ python-magic
 pytz
 PyYAML
 regex
-requests
+requests==2.26.0
 simplejson
 six
 sseclient
