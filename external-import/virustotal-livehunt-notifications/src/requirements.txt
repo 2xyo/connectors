@@ -1,3 +1,3 @@
-pycti==5.1.3
+pycti==5.6.post560
 vt-py==0.8.0
 
