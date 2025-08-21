@@ -1,6 +1,6 @@
 antlr4-python3-runtime
 chardet
-datefinder
+datefinder==0.7.3
 idna
 pika
 pycti
