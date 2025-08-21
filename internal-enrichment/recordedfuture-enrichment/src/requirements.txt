@@ -12,7 +12,7 @@ regex
 requests
 rfapi
 simplejson
-six
+six==1.17.0
 sseclient
 stix2
 stix2-patterns
