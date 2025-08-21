@@ -7,7 +7,7 @@ pika
 python-dateutil
 python-magic
 pytz
-PyYAML
+PyYAML==6.0.2
 regex
 requests
 simplejson
