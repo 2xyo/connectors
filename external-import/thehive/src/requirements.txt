@@ -1,2 +1,2 @@
 pycti==5.11.12
-thehive4py
+thehive4py==1.8.2
