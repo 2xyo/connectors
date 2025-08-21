@@ -6,7 +6,7 @@ idna
 pika
 python-dateutil
 python-magic
-pytz
+pytz==2025.2
 PyYAML
 regex
 requests
