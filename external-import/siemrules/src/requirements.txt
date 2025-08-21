@@ -4,7 +4,7 @@ chardet
 datefinder
 idna
 pika
-python-dateutil
+python-dateutil==2.9.0.post0
 python-magic
 pytz
 PyYAML
