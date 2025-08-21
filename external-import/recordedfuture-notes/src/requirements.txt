@@ -10,7 +10,7 @@ pytz
 PyYAML
 regex
 requests
-rfapi
+rfapi==2.6.0
 simplejson
 six
 sseclient
