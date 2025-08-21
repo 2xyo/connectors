@@ -5,7 +5,7 @@ idna
 pika
 pycti
 python-dateutil
-python-magic
+python-magic==0.4.27
 pytz
 PyYAML
 regex
