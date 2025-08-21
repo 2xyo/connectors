@@ -14,7 +14,7 @@ rfapi
 simplejson
 six
 sseclient
-stix2
+stix2==3.0.1
 stix2-patterns
 urllib3
 
