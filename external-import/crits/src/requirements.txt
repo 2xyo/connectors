@@ -1,4 +1,4 @@
 pycti==5.11.12
 requests
-python-dateutil
+python-dateutil==2.9.0.post0
 validators
