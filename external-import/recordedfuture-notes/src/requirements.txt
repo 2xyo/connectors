@@ -15,6 +15,6 @@ simplejson
 six
 sseclient
 stix2
-stix2-patterns
+stix2-patterns==2.1.2
 urllib3
 
