@@ -1,5 +1,5 @@
 antlr4-python3-runtime
-chardet==5.2.0
+chardet==7.4.3
 datefinder==0.7.3
 idna==3.4
 pycti==5.11.12
