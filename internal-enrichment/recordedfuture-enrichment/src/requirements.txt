@@ -6,7 +6,7 @@ pika
 pycti
 python-dateutil
 python-magic
-pytz
+pytz==2026.1.post1
 PyYAML
 regex
 requests
