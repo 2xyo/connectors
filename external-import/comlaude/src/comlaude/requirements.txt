@@ -1,2 +1,2 @@
-pyjwt
+pyjwt==2.12.1
 requests
