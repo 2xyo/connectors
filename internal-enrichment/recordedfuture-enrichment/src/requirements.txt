@@ -11,7 +11,7 @@ PyYAML
 regex
 requests
 rfapi
-simplejson
+simplejson==4.1.1
 six
 sseclient
 stix2
