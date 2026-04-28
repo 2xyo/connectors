@@ -1,2 +1,2 @@
 pycti==5.11.12
-pycountry
+pycountry==26.2.16
