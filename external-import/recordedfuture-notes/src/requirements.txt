@@ -16,5 +16,5 @@ six
 sseclient
 stix2
 stix2-patterns
-urllib3
+urllib3==2.6.3
 
