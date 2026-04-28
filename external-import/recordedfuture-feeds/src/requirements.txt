@@ -1,4 +1,4 @@
 pycti==5.11.12
-stix2
+stix2==3.0.2
 requests
 pytest
