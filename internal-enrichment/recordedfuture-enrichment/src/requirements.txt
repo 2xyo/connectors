@@ -9,7 +9,7 @@ python-magic
 pytz
 PyYAML
 regex
-requests
+requests==2.33.1
 rfapi
 simplejson
 six
