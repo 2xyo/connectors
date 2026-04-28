@@ -1,7 +1,7 @@
 pycti==5.11.12
 antlr4-python3-runtime
 chardet
-datefinder
+datefinder==1.0.0
 idna
 pika
 python-dateutil
