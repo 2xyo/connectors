@@ -7,7 +7,7 @@ pycti
 python-dateutil
 python-magic
 pytz
-PyYAML
+PyYAML==6.0.3
 regex
 requests
 rfapi
