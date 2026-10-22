@@ -1,5 +1,5 @@
 antlr4-python3-runtime
-chardet
+chardet==7.7.0
 datefinder
 idna
 pika
